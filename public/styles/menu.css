@@ -1,0 +1,163 @@
+#bg {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
+
+#contaier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+main ul {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 1rem;
+}
+
+.item {
+  list-style: none;
+  margin: 0.3rem;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: rgb(221, 223, 240);
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 06);
+}
+
+.item img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.quantity-controls {
+  padding-top: auto;
+  padding-right: 0;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.quantity-controls h2 {
+  margin: 0.5rem 0;
+}
+
+.quantity-controls input {
+  width: 2rem;
+  text-align: center;
+}
+
+#sub-btn {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+#sub-btn button {
+  font-weight: bold;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  width: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem 0;
+  padding: 0.65rem 0;
+  background-color: rgb(82, 68, 158);
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+}
+
+#sub-btn button:hover {
+  background-color: rgb(57, 47, 110);
+}
+
+#toasterContainer {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+  z-index: 1000;
+}
+.toaster {
+  width: 18.75rem;
+  font-weight: 500;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: forwards 4s ease-out;
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 48rem) {
+  header {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+  header a {
+    font-size: 2rem;
+  }
+
+  header div {
+    font-size: 1.5rem;
+  }
+  main ul {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .item {
+    margin: 0.5rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* .quantity-controls {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .ss {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.25rem;
+  }
+  .decrease,
+  .increase {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.25rem;
+  } */
+
+  #sub-btn {
+    width: 4rem;
+    bottom: 10;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #toasterContainer {
+    bottom: 60px;
+    right: 10px;
+    margin: 0.4rem;
+  }
+}

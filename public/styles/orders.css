@@ -1,0 +1,47 @@
+#order-summary {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 3rem auto;
+  background-color: rgb(204, 202, 202);
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+}
+#order-summary h2 {
+  margin-bottom: 0;
+  padding: 0 0 1rem 0;
+}
+
+#order-summary .order-item {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 1rem;
+}
+
+#order-summary .item-name {
+  font-family: serif;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+#order-summary .item-quantity {
+  color: rgb(255, 69, 0);
+}
+
+.clear-btn {
+  padding: 5px 10px;
+  background-color: rgb(82, 68, 158);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.clear-btn:hover {
+  background-color: rgb(57, 48, 109);
+}
+
+#line {
+  border: 1px solid rgb(57, 57, 57);
+}
